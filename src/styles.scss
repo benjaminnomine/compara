@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+$blue:    #63a5bf !default;
+$indigo:  #6610f2 !default;
+$purple:  #b48ead !default;
+$pink:    #e83e8c !default;
+$red:     #D97373 !default;
+$orange:  #D99962 !default;
+$yellow:  #F2AC57 !default;
+$green:   #a3be8c !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$primary:       $blue !default;
+$secondary:     $yellow !default;
+
+* {
+    box-sizing:border-box;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    padding-bottom:60px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

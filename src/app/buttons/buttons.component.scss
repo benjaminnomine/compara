@@ -1,0 +1,18 @@
+#buttoncompare {
+    position: relative;
+}
+
+#counter {
+    position: absolute;
+    top: 2px;
+    right:2px;
+    font-size: xx-small;
+}
+
+.divbutton {
+    display: inline-flexbox;
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 1999;
+}

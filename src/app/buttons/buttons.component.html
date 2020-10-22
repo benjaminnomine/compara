@@ -1,0 +1,5 @@
+<div class="mr-2 mt-2 divbutton">
+    <!--<button *ngIf="getCounter()>=1" class="btn btn-secondary mr-2" id="buttonvider" (click)="viderSelection()"><i class="fas fa-dumpster"></i></button>-->
+    <button *ngIf="(getCounter()>1 && getCounter()<6) && isDash()" class="btn btn-secondary mr-2" id="buttoncompare" routerLink="/comparateur"><i class="fas fa-chart-pie"></i><span id="counter" class="badge badge-primary">{{getCounter() }}</span></button>
+    <button *ngIf="isCompare()" class="btn btn-secondary mr-2" id="buttonfermer" routerLink="/dash"><i class="fas fa-window-close"></i></button>
+</div>

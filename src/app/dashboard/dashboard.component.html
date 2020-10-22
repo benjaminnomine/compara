@@ -1,0 +1,32 @@
+<div class="row mx-auto mt-2 mb-2">
+    <div *ngFor="let ordi of ordinateurs; let i of index" class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-2">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <button type="button" class="btn btn-secondary ml-2" (click)="open(ordi)">{{ordi.nom}}</button>
+                <form class="cbComparer" >
+                    <div class="checkbox"><input type="checkbox"
+                        [(ngModel)]="ordi.isSelected"
+                        value="{{ordi.ref}}"
+                        name="ordis"
+                        (change)="change(ordi)"
+                        [disabled]="selection?.length>4 && !ordi.isSelected"
+                        >
+                    </div>
+                </form>
+            </div>
+            <div class="card-body text-center">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-ordi">Prix : {{ordi.prix}} $</li>
+                    <li class="list-group-ordi">Taille de l'écran : {{ordi.ecran.taille}}"</li>
+                    <li class="list-group-ordi">Système d'exploitation : {{ordi.os}}</li>
+                    <li class="list-group-ordi">Stockage : {{ordi.stockage}}</li>
+                    <li class="list-group-ordi">Mémoire vive : {{ordi.ram.quantitee}}</li>
+                    <li class="list-group-ordi">Processeur : {{ordi.processeur.type}}</li>
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <img src={{ordi.img}}>
+            </div>
+        </div>
+    </div>
+</div>

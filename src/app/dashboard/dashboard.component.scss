@@ -1,0 +1,27 @@
+.card-text{
+    font-size: 28px;
+}
+
+.card-footer {
+    overflow: hidden;
+    background-color: white;
+}
+
+.card-footer img{
+    width:50% ;
+    transition: all 1.5s ease;
+}
+
+.card-footer:hover img {
+    transform: scale(1.5);
+}
+
+.card-header .cbComparer {
+    position: absolute;
+    top:2px;
+    right:10px;
+}
+.card-header {
+    position: relative;
+    line-height: 4em;
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing:border-box;
+}
+.card-header {
+    height: 150px;
+}
+.card-text{
+    font-size: 28px;
+}
+
+.card-body {
+    overflow: hidden;
+}
+
+.card-body img{
+    width:50% ;
+    transition: all 1.5s ease;
+}
+
+.card-body:hover img {
+    transform: scale(1.5);
+}
+
+.row-fluid {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.row-fluid .col-lg-3, .col-lg-6, .col-lg-4 {
+     display: inline-block;
+     float: none;
+}
